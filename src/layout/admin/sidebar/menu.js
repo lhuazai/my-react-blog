@@ -18,6 +18,11 @@ const menu = [
         path: '/admin/article/add',
         icon: 'edit',
         name: '新增'
+      },
+      {
+        path: '/admin/article/tag_category',
+        icon: 'tag',
+        name: '标签及分类'
       }
     ]
   },

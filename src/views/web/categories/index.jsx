@@ -9,8 +9,8 @@ function Categories(props) {
 
   return (
     <div className='app-categories'>
-      <h2 className='title'>Categories</h2>
-      <p className='category-all-title'>{`${categoryList.length} categories in total`}</p>
+      <h2 className='title'>分类</h2>
+      <p className='category-all-title'>{`总共 ${categoryList.length} 类`}</p>
 
       <div className='categories-list'>
         {categoryList.map((item, i) => (

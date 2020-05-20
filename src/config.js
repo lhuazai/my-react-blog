@@ -9,21 +9,21 @@ import MyInfo from '@/views/web/about/MyInfo'
 export const API_BASE_URL = 'http://127.0.0.1:6060'
 
 // project config
-export const HEADER_BLOG_NAME = '郭大大的博客' // header title 显示的名字
+export const HEADER_BLOG_NAME = '天马行空的博客' // header title 显示的名字
 
 // === sidebar
 export const SIDEBAR = {
   avatar: require('@/assets/images/avatar.jpeg'), // 侧边栏头像
-  title: '郭大大', // 标题
+  title: '天马行空', // 标题
   subTitle: '前端打杂人员，略微代码洁癖', // 子标题
   // 个人主页
   homepages: {
     github: {
-      link: 'https://github.com/gershonv',
+      link: 'https://github.com/lhuazai',
       icon: <Icon type='github' theme='filled' className='homepage-icon' />
     },
     juejin: {
-      link: 'https://juejin.im/user/5acac6c4f265da2378408f92',
+      link: 'https://juejin.im/user/58a3f28a86b599007392ddbc',
       icon: <SvgIcon type='iconjuejin' className='homepage-icon' />
     }
   }
@@ -37,7 +37,7 @@ export const DISCUSS_AVATAR = SIDEBAR.avatar // 评论框博主头像
  */
 export const GITHUB = {
   enable: true, // github 第三方授权开关
-  client_id: 'c6a96a84105bb0be1fe5', // Setting > Developer setting > OAuth applications => client_id
+  client_id: 'Iv1.334560998093b0d8', // Setting > Developer setting > OAuth applications => client_id
   url: 'https://github.com/login/oauth/authorize' // 跳转的登录的地址
 }
 
@@ -50,11 +50,9 @@ export const ABOUT = {
 
 // 公告 announcement
 export const ANNOUNCEMENT = {
-  enable: true, // 是否开启
+  enable: false, // 是否开启
   content: (
     <>
-      由于服务器期限将至 / ssl 证书过期 / 域名过期，请访问
-      <Href href='http://47.112.48.225:4002/'>最新的博客地址</Href>
     </>
   )
 }
