@@ -36,7 +36,7 @@ function AdminHeader(props) {
     <>
       <div>
         {/* <img src={logo} alt='pvmed' /> */}
-        <span className='header-title'>Blog Manager</span>
+        <span className='header-title'>管理系统</span>
         <Dropdown overlay={menu} className='header-dropdown'>
           <a className='ant-dropdown-link'>
             {userInfo.username} <Icon type='down' />

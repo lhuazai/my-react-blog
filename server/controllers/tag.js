@@ -11,7 +11,6 @@ class TagController {
       },
       order: ['id', [sequelize.fn('COUNT', sequelize.col('name')), 'desc']]
     })
-
     ctx.body = data
   }
 
@@ -24,13 +23,21 @@ class TagController {
       },
       order: ['id', [sequelize.fn('COUNT', sequelize.col('name')), 'desc']]
     })
-
     ctx.body = data
   }
+
   static async updateTagById(ctx) {
     const { tagName, tagId } = ctx.request.body
-    await TagModel.update({ name: tagName }, { where: { id: tagId } })
-    ctx.body = { message: 'success' }
+    console.log('ctx-----', ctx)
+    const data = await TagModel.update({ name: tagName }, { where: { id: tagId } })
+    ctx.body = { message: 'success', data }
+  }
+
+  static async updateCategoryById(ctx) {
+    const { categoryName, categoryId } = ctx.request.body
+    console.log('ctx-----', ctx)
+    const data = await CategoryModel.update({ name: categoryName }, { where: { id: categoryId } })
+    ctx.body = { message: 'success', data }
   }
 }
 
